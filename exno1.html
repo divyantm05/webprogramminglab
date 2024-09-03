@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>EX.NO1</title>
+<style>
+body
+{
+  font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
+}
+h1
+{
+  font-size: 40px;
+  color: white;
+}
+table
+{
+  border-collapse:collapse;
+  width:100%;
+}
+th,td
+{
+  border:1px solid #646262;
+  padding:20px;
+}
+a{
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+}
+a:hover{
+  color: black;
+  background-color: white;
+}
+th
+{
+  text-align:center;
+  color: white;
+}
+thead{
+  background-color: rgb(17, 171, 218);
+}
+tbody{
+  background-color: rgba(17, 171, 218, 0.082);
+  text-align: center;
+}
+.form-container
+{
+  border:1px solid #ddd;
+  padding:20px;
+  margin-top:20px;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+.form-label
+{
+  display:block;
+  margin-top:10px;
+  color: gray;
+}
+a{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+input{
+  width: 350px;   
+  margin-top:10px;
+  outline: none;
+  height: 30px;
+  border:1px solid gray;
+  border-radius:5px;
+  font-size: medium;
+}
+textarea{
+  width:350px;
+  margin-top:10px;
+  outline: none;
+  border:1px solid gray;
+  border-radius:5px;
+}
+button{
+  margin-top: 10px;
+  width: 120px;
+  padding:10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: rgb(100, 210, 255);
+  color: white;
+  font-size: large;
+}
+button:hover{
+  background-color:rgb(110, 203, 240) ;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  border:1px solid gray;
+  padding: 20px;
+}
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(7, 129, 185);
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#about,#products,#contact{
+  margin: 50px;
+}
+h2{
+  margin-top: 50px;
+}
+#abt-text{
+  text-wrap: pretty;
+  line-height: 25px;
+}
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <h1>MY WEBSITE</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+<main>
+  <section id="about">
+    <h2>About Us</h2>
+    <p id="abt-text">HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications. Let's see what is meant by Hypertext Markup Language, and Web page.
+      Hyper Text: HyperText simply means "Text within Text." A text has a link within it, is a hypertext. Whenever you click on a link which brings you to a new webpage, you have clicked on a hypertext. HyperText is a way to link two or more web pages (HTML documents) with each other.
+      Markup language: A markup language is a computer language that is used to apply layout and formatting conventions to a text document. Markup language makes text more interactive and dynamic. It can turn text into images, tables, links, etc.
+      Web Page: A web page is a document which is commonly written in HTML and translated by a web browser. A web page can be identified by entering an URL. A Web page can be of the static or dynamic type. With the help of HTML only, we can create static web pages.
+      Hence, HTML is a markup language which is used for creating attractive web pages with the help of styling, and which looks in a nice format on a web browser. An HTML document is made of many HTML tags and each HTML tag contains different content.</p>
+  </section>
+  <section id="products">
+    <h2>Products</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Product 1</td>
+          <td>This is a great product you'll love.</td>
+          <td>$19.99</td>
+        </tr>
+        <tr>
+          <td>Product 2</td>
+          <td>Another fantastic product for your needs.</td>
+          <td>$24.95</td>
+        </tr>
+        <tr>
+          <td>Product 3</td>
+          <td>A third amazing product to consider.</td>
+          <td>$39.99</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="container">
+    <div class="form-container">
+      <form action="/submit-form" method="post">
+        <label for="name" class="form-label">Your Name:</label>
+        <input type="text"  id="name" name="name" required></br>
+        <label for="email" class="form-label">Your Email:</label>
+        <input type="email" id="email" name="email"></br>
+        <label for="message" class="form-label">Message:</label>
+        <textarea name="message" rows="5" id="message" required></textarea></br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  </section>
+</main>
+</body>
+</html>

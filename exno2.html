@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Simple Website</title>
+    <style>
+      body{
+        font-family:sans-serif;
+        margin:0;
+        padding:20px;
+      }
+      h1{
+        text-align:center;
+      }
+      .banner-image{
+        width:100%;
+        height:380px;
+      }
+      li{
+        margin-top: 10px;
+      }
+      #myimage{
+        width: 150px;
+        height: 150px;
+      }
+      footer{
+        background-color: rgb(45, 47, 49);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+      }
+      header{
+        background-color: rgb(5, 45, 83);
+        color: white;
+        padding: 10px;
+      }
+      .img-div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Simple Website</h1>
+      <img src="bannerimage.jpg.jpg"" alt="Website Banner" class="banner-image">
+    </header>
+    <main>
+      <p style="font-size: 20px; color: rgb(38, 120, 214); text-align: center;">Welcome to my website! This is a simple example demonstrating basic HTML and DHTML concepts.</p>
+      <p><strong>Here are some highlighted features:</strong></p>
+      <ul>
+        <li><b>Bold text</b>using the strong tag(<strong>).</li>
+        <li><i>Italic text</i>using the italic tag(<i>).</li>
+        <li>You can also use inline styles (like font-weight:bold) within the elements tags for more control.</li>
+        <li>DHTML can be used to add interactivity using javascript, but this example focusses on HTML structure and basic formatting.</li>
+      </ul>
+      <div class="img-div">
+      <img src="java.jfif" alt="My Iamge" id="myimage" onmouseover="changeImage('python.jfif')" onmouseout="changeImage('java.jfif')">
+      <p>This image has a hover effect using DHTML</p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 My Website</p>
+    </footer>
+  </body>
+  <script>
+    function changeImage(image){
+        document.getElementById('myimage').src=image;
+    }
+  </script>
+</html>
